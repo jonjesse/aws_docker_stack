@@ -15,12 +15,13 @@ Run terraform:
 First initialize:
 
 ```
-docker run -it --rm -v <dir>/aws_docker2:/go -v /root/aws:/root -w /go hashicorp/terraform:latest init
+docker run -it --rm -v <dir>:/go -v /root/aws:/root -w /go hashicorp/terraform:latest init
 ```
 
 Run terraform:
 ```
-docker run -it --rm -v <dir>/aws_docker2:/go -v /root/aws:/root -w /go hashicorp/terraform:latest init -var-file="/root/production.tfvars"
+docker run -it --rm -v <dir>:/go -v /root/aws:/root -w /go hashicorp/terraform:latest plan -var-file="/root/production.tfvars"
 ```
+Run apply
 
 You may forgo "-var-file", terraform will ask you for the variable when you run it
