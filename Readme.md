@@ -7,7 +7,7 @@ This script will perform the follwing:
 Get latest terraform docker
 
 ```
-git pull hashicorp/terraform:latest
+docker pull hashicorp/terraform:latest
 ```
 
 Run terraform:
