@@ -15,9 +15,10 @@ Run terraform:
 First initialize:
 
 ```
-docker run -it --rm -v <dir>/aws_docker2:/go -v /root/aws:/root -w /go hashicorp/terraform:latest init"
+docker run -it --rm -v <dir>/aws_docker2:/go -v /root/aws:/root -w /go hashicorp/terraform:latest init
 ```
 
+Run terraform:
 ```
 docker run -it --rm -v <dir>/aws_docker2:/go -v /root/aws:/root -w /go hashicorp/terraform:latest init -var-file="/root/production.tfvars"
 ```
