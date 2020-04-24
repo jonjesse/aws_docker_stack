@@ -24,7 +24,7 @@ resource "aws_instance" "docker2" {
 
  provisioner "remote-exec" {
    inline = [
-     "sleep 300",
+     "sleep 250",
      "echo public IP is: ${aws_instance.docker2.public_ip}",
      "sudo killall apt apt-get",
      "sudo apt-get update",
