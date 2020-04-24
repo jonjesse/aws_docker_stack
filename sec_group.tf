@@ -28,9 +28,9 @@ resource "aws_security_group" "docker" {
   }
 
   ingress {
-    description = "8080"
-    from_port = 8080
-    to_port = 8080
+    description = "8086"
+    from_port = 8086
+    to_port = 8086
     protocol = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
   }
