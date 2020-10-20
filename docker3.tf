@@ -23,7 +23,7 @@ resource "aws_instance" "docker3" {
    }
 
   provisioner "file" {
-  source = "/go/join_swarm.sh"
+  source = "/home/join_swarm.sh"
   destination = "/home/ubuntu/join_swarm.sh"
 
   connection {
